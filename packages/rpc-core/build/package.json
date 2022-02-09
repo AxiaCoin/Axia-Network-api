@@ -1,0 +1,72 @@
+{
+  "name": "@axia-js/rpc-core",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "A JavaScript wrapper for the AXIA JsonRPC interface",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/rpc-core#readme",
+  "dependencies": {
+    "@axia-js/rpc-provider": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4",
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@axia-js/keyring": "0.1.1"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./bundle": {
+      "require": "./bundle.cjs",
+      "default": "./bundle.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./README.md": "./README.md",
+    "./types": {
+      "require": "./types.cjs",
+      "default": "./types.js"
+    },
+    "./typesonrpc.js": "./types.jsonrpc.js",
+    "./util": {
+      "require": "./util/index.cjs",
+      "default": "./util/index.js"
+    },
+    "./util/drr": {
+      "require": "./util/drr.cjs",
+      "default": "./util/drr.js"
+    },
+    "./util/memo": {
+      "require": "./util/memo.cjs",
+      "default": "./util/memo.js"
+    },
+    "./util/refCountDelay": {
+      "require": "./util/refCountDelay.cjs",
+      "default": "./util/refCountDelay.js"
+    }
+  }
+}

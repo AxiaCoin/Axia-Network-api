@@ -1,0 +1,210 @@
+{
+  "name": "@axia-js/api",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Promise and RxJS wrappers around the AXIA JS RPC",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/api#readme",
+  "dependencies": {
+    "@axia-js/api-derive": "0.1.0",
+    "@axia-js/keyring": "0.1.2",
+    "@axia-js/rpc-core": "0.1.0",
+    "@axia-js/rpc-provider": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/types-known": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@axia-js/util-crypto": "0.1.2",
+    "@babel/runtime": "^7.15.4",
+    "eventemitter3": "^4.0.7",
+    "rxjs": "^7.3.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./augment": {
+      "require": "./augment/index.cjs",
+      "default": "./augment/index.js"
+    },
+    "./augment/consts": {
+      "require": "./augment/consts.cjs",
+      "default": "./augment/consts.js"
+    },
+    "./augment/errors": {
+      "require": "./augment/errors.cjs",
+      "default": "./augment/errors.js"
+    },
+    "./augment/events": {
+      "require": "./augment/events.cjs",
+      "default": "./augment/events.js"
+    },
+    "./augment/query": {
+      "require": "./augment/query.cjs",
+      "default": "./augment/query.js"
+    },
+    "./augment/rpc": {
+      "require": "./augment/rpc.cjs",
+      "default": "./augment/rpc.js"
+    },
+    "./augment/tx": {
+      "require": "./augment/tx.cjs",
+      "default": "./augment/tx.js"
+    },
+    "./base": {
+      "require": "./base/index.cjs",
+      "default": "./base/index.js"
+    },
+    "./base/capabilities": {
+      "require": "./base/capabilities.cjs",
+      "default": "./base/capabilities.js"
+    },
+    "./base/Decorate": {
+      "require": "./base/Decorate.cjs",
+      "default": "./base/Decorate.js"
+    },
+    "./base/Events": {
+      "require": "./base/Events.cjs",
+      "default": "./base/Events.js"
+    },
+    "./base/Getters": {
+      "require": "./base/Getters.cjs",
+      "default": "./base/Getters.js"
+    },
+    "./base/Init": {
+      "require": "./base/Init.cjs",
+      "default": "./base/Init.js"
+    },
+    "./base/types": {
+      "require": "./base/types.cjs",
+      "default": "./base/types.js"
+    },
+    "./bundle": {
+      "require": "./bundle.cjs",
+      "default": "./bundle.js"
+    },
+    "./checkTypes.manual": {
+      "require": "./checkTypes.manual.cjs",
+      "default": "./checkTypes.manual.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./promise": {
+      "require": "./promise/index.cjs",
+      "default": "./promise/index.js"
+    },
+    "./promise/Combinator": {
+      "require": "./promise/Combinator.cjs",
+      "default": "./promise/Combinator.js"
+    },
+    "./promise/types": {
+      "require": "./promise/types.cjs",
+      "default": "./promise/types.js"
+    },
+    "./README.md": "./README.md",
+    "./rx": {
+      "require": "./rx/index.cjs",
+      "default": "./rx/index.js"
+    },
+    "./submittable": {
+      "require": "./submittable/index.cjs",
+      "default": "./submittable/index.js"
+    },
+    "./submittable/createClass": {
+      "require": "./submittable/createClass.cjs",
+      "default": "./submittable/createClass.js"
+    },
+    "./submittable/createSubmittable": {
+      "require": "./submittable/createSubmittable.cjs",
+      "default": "./submittable/createSubmittable.js"
+    },
+    "./submittable/Result": {
+      "require": "./submittable/Result.cjs",
+      "default": "./submittable/Result.js"
+    },
+    "./submittable/types": {
+      "require": "./submittable/types.cjs",
+      "default": "./submittable/types.js"
+    },
+    "./types": {
+      "require": "./types/index.cjs",
+      "default": "./types/index.js"
+    },
+    "./types/base": {
+      "require": "./types/base.cjs",
+      "default": "./types/base.js"
+    },
+    "./types/consts": {
+      "require": "./types/consts.cjs",
+      "default": "./types/consts.js"
+    },
+    "./types/errors": {
+      "require": "./types/errors.cjs",
+      "default": "./types/errors.js"
+    },
+    "./types/events": {
+      "require": "./types/events.cjs",
+      "default": "./types/events.js"
+    },
+    "./types/rpc": {
+      "require": "./types/rpc.cjs",
+      "default": "./types/rpc.js"
+    },
+    "./types/storage": {
+      "require": "./types/storage.cjs",
+      "default": "./types/storage.js"
+    },
+    "./types/submittable": {
+      "require": "./types/submittable.cjs",
+      "default": "./types/submittable.js"
+    },
+    "./util": {
+      "require": "./util/index.cjs",
+      "default": "./util/index.js"
+    },
+    "./util/augmentObject": {
+      "require": "./util/augmentObject.cjs",
+      "default": "./util/augmentObject.js"
+    },
+    "./util/decorate": {
+      "require": "./util/decorate.cjs",
+      "default": "./util/decorate.js"
+    },
+    "./util/filterEvents": {
+      "require": "./util/filterEvents.cjs",
+      "default": "./util/filterEvents.js"
+    },
+    "./util/isKeyringPair": {
+      "require": "./util/isKeyringPair.cjs",
+      "default": "./util/isKeyringPair.js"
+    },
+    "./util/logging": {
+      "require": "./util/logging.cjs",
+      "default": "./util/logging.js"
+    },
+    "./util/validate": {
+      "require": "./util/validate.cjs",
+      "default": "./util/validate.js"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{{> header }}
+
+{{{ imports }}}
+
+declare module '@axia-js/api/types/events' {
+  export interface AugmentedEvents<ApiType> {
+    {{#each modules}}
+    {{{name}}}: {
+      {{#each items}}
+      {{> docs}}
+      {{{name}}}: AugmentedEvent<ApiType, [{{{type}}}]>;
+      {{/each}}
+      {{#unless @root.isStrict}}
+      /**
+       * Generic event
+       **/
+      [key: string]: AugmentedEvent<ApiType>;
+      {{/unless}}
+    };
+    {{/each}}
+  }
+
+  export interface DecoratedEvents<ApiType extends ApiTypes> extends AugmentedEvents<ApiType> {
+    {{#unless isStrict}}
+    [key: string]: ModuleEvents<ApiType>;
+    {{/unless}}
+  }
+}
+{{> footer }}

@@ -1,0 +1,40 @@
+{
+  "repository": "https://github.com/axia-js/api",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "license": "Apache-2",
+  "private": true,
+  "type": "commonjs",
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "yarn build:interfaces && axia-dev-build-ts",
+    "build:extra": "(cd packages/typegen && copyfiles scripts/* build)",
+    "build:interfaces": "axia-types-internal-interfaces",
+    "build:release": "axia-ci-ghact-build",
+    "build:rollup": "axia-exec-rollup --config",
+    "docs:metadata": "axia-types-internal-metadata",
+    "chain:info": "axia-types-chain-info",
+    "lint": "axia-dev-run-lint",
+    "clean": "axia-dev-clean-build",
+    "postinstall": "axia-dev-yarn-only",
+    "test": "axia-dev-run-test --coverage --forceExit --runInBand --testPathIgnorePatterns e2e",
+    "test:one": "axia-dev-run-test --detectOpenHandles --forceExit",
+    "test:watch": "axia-dev-run-test --watch"
+  },
+  "devDependencies": {
+    "@axia-js/dev": "0.1.0",
+    "@axia-js/ts": "0.1.0",
+    "@axia-js/typegen": "workspace:packages/typegen",
+    "@babel/core": "^7.15.5",
+    "@babel/register": "^7.15.3",
+    "@babel/runtime": "^7.15.4",
+    "@types/jest": "^27.0.1",
+    "copyfiles": "^2.4.1"
+  },
+  "version": "0.1.1",
+  "packageManager": "yarn@3.0.1"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@axia-js/types-support",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Supporting files for types, mostly for testing",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/types-support#readme",
+  "dependencies": {
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4"
+  }
+}

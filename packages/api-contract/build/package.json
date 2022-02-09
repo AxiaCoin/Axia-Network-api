@@ -1,0 +1,140 @@
+{
+  "name": "@axia-js/api-contract",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Interfaces for interacting with contracts and contract ABIs",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/api-contract#readme",
+  "dependencies": {
+    "@axia-js/api": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4",
+    "rxjs": "^7.3.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./Abi": {
+      "require": "./Abi.cjs",
+      "default": "./Abi.js"
+    },
+    "./base": {
+      "require": "./base/index.cjs",
+      "default": "./base/index.js"
+    },
+    "./base/Base": {
+      "require": "./base/Base.cjs",
+      "default": "./base/Base.js"
+    },
+    "./base/Blueprint": {
+      "require": "./base/Blueprint.cjs",
+      "default": "./base/Blueprint.js"
+    },
+    "./base/Code": {
+      "require": "./base/Code.cjs",
+      "default": "./base/Code.js"
+    },
+    "./base/Contract": {
+      "require": "./base/Contract.cjs",
+      "default": "./base/Contract.js"
+    },
+    "./base/mock": {
+      "require": "./base/mock.cjs",
+      "default": "./base/mock.js"
+    },
+    "./base/types": {
+      "require": "./base/types.cjs",
+      "default": "./base/types.js"
+    },
+    "./base/util": {
+      "require": "./base/util.cjs",
+      "default": "./base/util.js"
+    },
+    "./bundle": {
+      "require": "./bundle.cjs",
+      "default": "./bundle.js"
+    },
+    "./checkTypes.manual": {
+      "require": "./checkTypes.manual.cjs",
+      "default": "./checkTypes.manual.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./MetaRegistry": {
+      "require": "./MetaRegistry.cjs",
+      "default": "./MetaRegistry.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./promise": {
+      "require": "./promise/index.cjs",
+      "default": "./promise/index.js"
+    },
+    "./promise/Blueprint": {
+      "require": "./promise/Blueprint.cjs",
+      "default": "./promise/Blueprint.js"
+    },
+    "./promise/Code": {
+      "require": "./promise/Code.cjs",
+      "default": "./promise/Code.js"
+    },
+    "./promise/Contract": {
+      "require": "./promise/Contract.cjs",
+      "default": "./promise/Contract.js"
+    },
+    "./promise/types": {
+      "require": "./promise/types.cjs",
+      "default": "./promise/types.js"
+    },
+    "./README.md": "./README.md",
+    "./rx": {
+      "require": "./rx/index.cjs",
+      "default": "./rx/index.js"
+    },
+    "./rx/Blueprint": {
+      "require": "./rx/Blueprint.cjs",
+      "default": "./rx/Blueprint.js"
+    },
+    "./rx/Code": {
+      "require": "./rx/Code.cjs",
+      "default": "./rx/Code.js"
+    },
+    "./rx/Contract": {
+      "require": "./rx/Contract.cjs",
+      "default": "./rx/Contract.js"
+    },
+    "./rx/types": {
+      "require": "./rx/types.cjs",
+      "default": "./rx/types.js"
+    },
+    "./types": {
+      "require": "./types.cjs",
+      "default": "./types.js"
+    },
+    "./util": {
+      "require": "./util.cjs",
+      "default": "./util.js"
+    }
+  }
+}

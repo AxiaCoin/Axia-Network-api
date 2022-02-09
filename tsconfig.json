@@ -1,0 +1,35 @@
+{
+  "extends": "@axia-js/dev/config/tsconfig.json",
+  "exclude": [
+    "build/**/*",
+    "**/build/**/*",
+    "docs/examples/promise/90_typegen/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths":
+    {
+      "@axia-js/api": ["packages/api/src"],
+      "@axia-js/api/*": ["packages/api/src/*"],
+      "@axia-js/api-contract": ["packages/api-contract/src"],
+      "@axia-js/api-contract/*": ["packages/api-contract/src/*"],
+      "@axia-js/api-derive": ["packages/api-derive/src"],
+      "@axia-js/api-derive/*": ["packages/api-derive/src/*"],
+      "@axia-js/rpc-core": ["packages/rpc-core/src"],
+      "@axia-js/rpc-core/*": ["packages/rpc-core/src/*"],
+      "@axia-js/rpc-provider": ["packages/rpc-provider/src"],
+      "@axia-js/rpc-provider/*": ["packages/rpc-provider/src/*"],
+      "@axia-js/types": ["packages/types/src"],
+      "@axia-js/types/*": ["packages/types/src/*"],
+      "@axia-js/types-known": ["packages/types-known/src"],
+      "@axia-js/types-known/*": ["packages/types-known/src/*"],
+      "@axia-js/types-support": ["packages/types-support/src"],
+      "@axia-js/types-support/*": ["packages/types-support/src/*"]
+    },
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@axia-js/ts",
+      "./node_modules/@types"
+    ]
+  }
+}

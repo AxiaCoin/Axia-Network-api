@@ -1,0 +1,30 @@
+{{> header }}
+
+{{{ imports }}}
+
+declare module '@axia-js/api/types/submittable' {
+  export interface AugmentedSubmittables<ApiType> {
+    {{#each modules}}
+    {{{name}}}: {
+      {{#each items}}
+      {{> docs}}
+      {{{name}}}: AugmentedSubmittable<({{{params}}}) => SubmittableExtrinsic<ApiType>, [{{{args}}}]>;
+      {{/each}}
+      {{#unless @root.isStrict}}
+      /**
+       * Generic tx
+       **/
+      [key: string]: SubmittableExtrinsicFunction<ApiType>;
+      {{/unless}}
+    };
+    {{/each}}
+  }
+
+  export interface SubmittableExtrinsics<ApiType extends ApiTypes> extends AugmentedSubmittables<ApiType> {
+    (extrinsic: Call | Extrinsic | Uint8Array | string): SubmittableExtrinsic<ApiType>;
+    {{#unless isStrict}}
+    [key: string]: SubmittableModuleExtrinsics<ApiType>;
+    {{/unless}}
+  }
+}
+{{> footer }}

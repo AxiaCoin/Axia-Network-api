@@ -1,0 +1,27 @@
+{
+  "name": "@axia-js/types-known",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Known type definitions",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/types-known#readme",
+  "dependencies": {
+    "@axia-js/networks": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4"
+  }
+}

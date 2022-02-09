@@ -1,0 +1,18 @@
+// Copyright 2017-2021 @axia-js/types authors & contributors
+// SPDX-License-Identifier: Apache-2.0
+
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
+import json3 from '@axia-js/types-support/json/GrandpaRoundstate.001.json';
+
+import { TypeRegistry } from '../../create';
+
+describe('ReportedRoundStates', (): void => {
+  const registry = new TypeRegistry();
+
+  it('decodes from an actual message', (): void => {
+    const states = registry.createType('ReportedRoundStates', json3.result);
+
+    expect(states.best.precommits.missing.size).toEqual(250);
+  });
+});

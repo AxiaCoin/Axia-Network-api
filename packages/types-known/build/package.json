@@ -1,0 +1,119 @@
+{
+  "name": "@axia-js/types-known",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Known type definitions",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/types-known#readme",
+  "dependencies": {
+    "@axia-js/networks": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./bundle": {
+      "require": "./bundle.cjs",
+      "default": "./bundle.js"
+    },
+    "./chain": {
+      "require": "./chain/index.cjs",
+      "default": "./chain/index.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./knownOrigins": {
+      "require": "./knownOrigins.cjs",
+      "default": "./knownOrigins.js"
+    },
+    "./modules": {
+      "require": "./modules.cjs",
+      "default": "./modules.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./README.md": "./README.md",
+    "./spec": {
+      "require": "./spec/index.cjs",
+      "default": "./spec/index.js"
+    },
+    "./spec/alphanet": {
+      "require": "./spec/alphanet.cjs",
+      "default": "./spec/alphanet.js"
+    },
+    "./spec/axia": {
+      "require": "./spec/axia.cjs",
+      "default": "./spec/axia.js"
+    },
+    "./spec/axialunar": {
+      "require": "./spec/axialunar.cjs",
+      "default": "./spec/axialunar.js"
+    },
+    "./spec/betanet": {
+      "require": "./spec/betanet.cjs",
+      "default": "./spec/betanet.js"
+    },
+    "./spec/centrifuge-chain": {
+      "require": "./spec/centrifuge-chain.cjs",
+      "default": "./spec/centrifuge-chain.js"
+    },
+    "./spec/node": {
+      "require": "./spec/node.cjs",
+      "default": "./spec/node.js"
+    },
+    "./spec/node-template": {
+      "require": "./spec/node-template.cjs",
+      "default": "./spec/node-template.js"
+    },
+    "./spec/shell": {
+      "require": "./spec/shell.cjs",
+      "default": "./spec/shell.js"
+    },
+    "./spec/statemint": {
+      "require": "./spec/statemint.cjs",
+      "default": "./spec/statemint.js"
+    },
+    "./upgrades": {
+      "require": "./upgrades/index.cjs",
+      "default": "./upgrades/index.js"
+    },
+    "./upgrades/alphanet": {
+      "require": "./upgrades/alphanet.cjs",
+      "default": "./upgrades/alphanet.js"
+    },
+    "./upgrades/axia": {
+      "require": "./upgrades/axia.cjs",
+      "default": "./upgrades/axia.js"
+    },
+    "./upgrades/axialunar": {
+      "require": "./upgrades/axialunar.cjs",
+      "default": "./upgrades/axialunar.js"
+    },
+    "./upgrades/types": {
+      "require": "./upgrades/types.cjs",
+      "default": "./upgrades/types.js"
+    }
+  }
+}

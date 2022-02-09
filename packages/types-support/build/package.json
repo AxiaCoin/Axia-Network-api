@@ -1,0 +1,124 @@
+{
+  "name": "@axia-js/types-support",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Supporting files for types, mostly for testing",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/types-support#readme",
+  "dependencies": {
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./json/AccountIdVec.001.json": "./json/AccountIdVec.001.json",
+    "./json/EventRecord.001.json": "./json/EventRecord.001.json",
+    "./json/EventRecord.002.json": "./json/EventRecord.002.json",
+    "./json/EventRecord.003.json": "./json/EventRecord.003.json",
+    "./json/ExtrinsicStatus.001.json": "./json/ExtrinsicStatus.001.json",
+    "./json/GrandpaRoundstate.001.json": "./json/GrandpaRoundstate.001.json",
+    "./json/Header.001.json": "./json/Header.001.json",
+    "./json/Header.002.json": "./json/Header.002.json",
+    "./json/Header.003.json": "./json/Header.003.json",
+    "./json/Header.004.json": "./json/Header.004.json",
+    "./json/RuntimeVersion.002.json": "./json/RuntimeVersion.002.json",
+    "./json/SignedBlock.002.json": "./json/SignedBlock.002.json",
+    "./json/SignedBlock.003.00.json": "./json/SignedBlock.003.00.json",
+    "./json/SignedBlock.003.01.json": "./json/SignedBlock.003.01.json",
+    "./json/SignedBlock.004.immortal.json": "./json/SignedBlock.004.immortal.json",
+    "./json/SignedBlock.004.mortal.json": "./json/SignedBlock.004.mortal.json",
+    "./json/SignedBlock.005.json": "./json/SignedBlock.005.json",
+    "./json/StorageChangeSet.001.json": "./json/StorageChangeSet.001.json",
+    "./metadata/static-axia": {
+      "require": "./metadata/static-axia.cjs",
+      "default": "./metadata/static-axia.js"
+    },
+    "./metadata/static-axialunar": {
+      "require": "./metadata/static-axialunar.cjs",
+      "default": "./metadata/static-axialunar.js"
+    },
+    "./metadata/static-axlib": {
+      "require": "./metadata/static-axlib.cjs",
+      "default": "./metadata/static-axlib.js"
+    },
+    "./metadata/v10/axlib-hex": {
+      "require": "./metadata/v10/axlib-hex.cjs",
+      "default": "./metadata/v10/axlib-hex.js"
+    },
+    "./metadata/v10/axlib-json.json": "./metadata/v10/axlib-json.json",
+    "./metadata/v11/axlib-hex": {
+      "require": "./metadata/v11/axlib-hex.cjs",
+      "default": "./metadata/v11/axlib-hex.js"
+    },
+    "./metadata/v11/axlib-json.json": "./metadata/v11/axlib-json.json",
+    "./metadata/v12/axlib-hex": {
+      "require": "./metadata/v12/axlib-hex.cjs",
+      "default": "./metadata/v12/axlib-hex.js"
+    },
+    "./metadata/v12/axlib-json.json": "./metadata/v12/axlib-json.json",
+    "./metadata/v13/axia-hex": {
+      "require": "./metadata/v13/axia-hex.cjs",
+      "default": "./metadata/v13/axia-hex.js"
+    },
+    "./metadata/v13/axia-json.json": "./metadata/v13/axia-json.json",
+    "./metadata/v13/axialunar-hex": {
+      "require": "./metadata/v13/axialunar-hex.cjs",
+      "default": "./metadata/v13/axialunar-hex.js"
+    },
+    "./metadata/v13/axialunar-json.json": "./metadata/v13/axialunar-json.json",
+    "./metadata/v13/axlib-hex": {
+      "require": "./metadata/v13/axlib-hex.cjs",
+      "default": "./metadata/v13/axlib-hex.js"
+    },
+    "./metadata/v13/axlib-json.json": "./metadata/v13/axlib-json.json",
+    "./metadata/v14/axia-hex": {
+      "require": "./metadata/v14/axia-hex.cjs",
+      "default": "./metadata/v14/axia-hex.js"
+    },
+    "./metadata/v14/axia-json.json": "./metadata/v14/axia-json.json",
+    "./metadata/v14/axia-types.json": "./metadata/v14/axia-types.json",
+    "./metadata/v14/axialunar-hex": {
+      "require": "./metadata/v14/axialunar-hex.cjs",
+      "default": "./metadata/v14/axialunar-hex.js"
+    },
+    "./metadata/v14/axialunar-json.json": "./metadata/v14/axialunar-json.json",
+    "./metadata/v14/axialunar-types.json": "./metadata/v14/axialunar-types.json",
+    "./metadata/v14/axlib-hex": {
+      "require": "./metadata/v14/axlib-hex.cjs",
+      "default": "./metadata/v14/axlib-hex.js"
+    },
+    "./metadata/v14/axlib-json.json": "./metadata/v14/axlib-json.json",
+    "./metadata/v14/axlib-types.json": "./metadata/v14/axlib-types.json",
+    "./metadata/v9/axlib-hex": {
+      "require": "./metadata/v9/axlib-hex.cjs",
+      "default": "./metadata/v9/axlib-hex.js"
+    },
+    "./metadata/v9/axlib-json.json": "./metadata/v9/axlib-json.json",
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./README.md": "./README.md"
+  }
+}

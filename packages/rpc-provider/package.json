@@ -1,0 +1,37 @@
+{
+  "name": "@axia-js/rpc-provider",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Transport providers for the API",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/rpc-provider#readme",
+  "dependencies": {
+    "@axia-js/types": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@axia-js/util-crypto": "0.1.2",
+    "@axia-js/x-fetch": "0.1.0",
+    "@axia-js/x-global": "0.1.0",
+    "@axia-js/x-ws": "0.1.0",
+    "@babel/runtime": "^7.15.4",
+    "eventemitter3": "^4.0.7"
+  },
+  "devDependencies": {
+    "@axia-js/keyring": "0.1.2",
+    "@axia-js/types": "0.1.0",
+    "mock-socket": "^9.0.3",
+    "nock": "^13.1.3"
+  }
+}

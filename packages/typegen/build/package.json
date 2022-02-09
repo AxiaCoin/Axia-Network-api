@@ -1,0 +1,183 @@
+{
+  "name": "@axia-js/typegen",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Type generation scripts",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bin": {
+    "axia-types-chain-info": "./scripts/axia-types-chain-info.cjs",
+    "axia-types-from-chain": "./scripts/axia-types-from-chain.cjs",
+    "axia-types-from-defs": "./scripts/axia-types-from-defs.cjs",
+    "axia-types-internal-interfaces": "./scripts/axia-types-internal-interfaces.cjs",
+    "axia-types-internal-metadata": "./scripts/axia-types-internal-metadata.cjs"
+  },
+  "repository": "github:axia-js/api",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/typegen#readme",
+  "dependencies": {
+    "@axia-js/api": "0.1.0",
+    "@axia-js/rpc-provider": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/types-support": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@babel/core": "^7.15.5",
+    "@babel/register": "^7.15.3",
+    "@babel/runtime": "^7.15.4",
+    "handlebars": "^4.7.7",
+    "websocket": "^1.0.34",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {
+    "@types/websocket": "^1.0.4",
+    "@types/yargs": "^17.0.2"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./bundle": {
+      "require": "./bundle.cjs",
+      "default": "./bundle.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./extractChain": {
+      "require": "./extractChain.cjs",
+      "default": "./extractChain.js"
+    },
+    "./fromChain": {
+      "require": "./fromChain.cjs",
+      "default": "./fromChain.js"
+    },
+    "./fromDefs": {
+      "require": "./fromDefs.cjs",
+      "default": "./fromDefs.js"
+    },
+    "./generate": {
+      "require": "./generate/index.cjs",
+      "default": "./generate/index.js"
+    },
+    "./generate/consts": {
+      "require": "./generate/consts.cjs",
+      "default": "./generate/consts.js"
+    },
+    "./generate/errors": {
+      "require": "./generate/errors.cjs",
+      "default": "./generate/errors.js"
+    },
+    "./generate/events": {
+      "require": "./generate/events.cjs",
+      "default": "./generate/events.js"
+    },
+    "./generate/interfaceRegistry": {
+      "require": "./generate/interfaceRegistry.cjs",
+      "default": "./generate/interfaceRegistry.js"
+    },
+    "./generate/lookup": {
+      "require": "./generate/lookup.cjs",
+      "default": "./generate/lookup.js"
+    },
+    "./generate/query": {
+      "require": "./generate/query.cjs",
+      "default": "./generate/query.js"
+    },
+    "./generate/rpc": {
+      "require": "./generate/rpc.cjs",
+      "default": "./generate/rpc.js"
+    },
+    "./generate/tsDef": {
+      "require": "./generate/tsDef.cjs",
+      "default": "./generate/tsDef.js"
+    },
+    "./generate/tx": {
+      "require": "./generate/tx.cjs",
+      "default": "./generate/tx.js"
+    },
+    "./generate/types": {
+      "require": "./generate/types.cjs",
+      "default": "./generate/types.js"
+    },
+    "./interfacesTs": {
+      "require": "./interfacesTs.cjs",
+      "default": "./interfacesTs.js"
+    },
+    "./metadataMd": {
+      "require": "./metadataMd.cjs",
+      "default": "./metadataMd.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./README.md": "./README.md",
+    "./scripts/axia-types-chain-info.cjs": "./scripts/axia-types-chain-info.cjs",
+    "./scripts/axia-types-from-chain.cjs": "./scripts/axia-types-from-chain.cjs",
+    "./scripts/axia-types-from-defs.cjs": "./scripts/axia-types-from-defs.cjs",
+    "./scripts/axia-types-internal-interfaces.cjs": "./scripts/axia-types-internal-interfaces.cjs",
+    "./scripts/axia-types-internal-metadata.cjs": "./scripts/axia-types-internal-metadata.cjs",
+    "./templates/consts.hbs": "./templates/consts.hbs",
+    "./templates/docs.hbs": "./templates/docs.hbs",
+    "./templates/errors.hbs": "./templates/errors.hbs",
+    "./templates/events.hbs": "./templates/events.hbs",
+    "./templates/footer.hbs": "./templates/footer.hbs",
+    "./templates/header.hbs": "./templates/header.hbs",
+    "./templates/interfaceRegistry.hbs": "./templates/interfaceRegistry.hbs",
+    "./templates/lookup/defs-named.hbs": "./templates/lookup/defs-named.hbs",
+    "./templates/lookup/defs.hbs": "./templates/lookup/defs.hbs",
+    "./templates/lookup/index.hbs": "./templates/lookup/index.hbs",
+    "./templates/lookup/types.hbs": "./templates/lookup/types.hbs",
+    "./templates/query.hbs": "./templates/query.hbs",
+    "./templates/rpc.hbs": "./templates/rpc.hbs",
+    "./templates/tsDef/index.hbs": "./templates/tsDef/index.hbs",
+    "./templates/tsDef/moduleTypes.hbs": "./templates/tsDef/moduleTypes.hbs",
+    "./templates/tsDef/types.hbs": "./templates/tsDef/types.hbs",
+    "./templates/tx.hbs": "./templates/tx.hbs",
+    "./util": {
+      "require": "./util/index.cjs",
+      "default": "./util/index.js"
+    },
+    "./util/derived": {
+      "require": "./util/derived.cjs",
+      "default": "./util/derived.js"
+    },
+    "./util/docs": {
+      "require": "./util/docs.cjs",
+      "default": "./util/docs.js"
+    },
+    "./util/file": {
+      "require": "./util/file.cjs",
+      "default": "./util/file.js"
+    },
+    "./util/formatting": {
+      "require": "./util/formatting.cjs",
+      "default": "./util/formatting.js"
+    },
+    "./util/imports": {
+      "require": "./util/imports.cjs",
+      "default": "./util/imports.js"
+    },
+    "./util/initMeta": {
+      "require": "./util/initMeta.cjs",
+      "default": "./util/initMeta.js"
+    },
+    "./util/register": {
+      "require": "./util/register.cjs",
+      "default": "./util/register.js"
+    }
+  }
+}

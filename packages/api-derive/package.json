@@ -1,0 +1,34 @@
+{
+  "name": "@axia-js/api-derive",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Common functions used across AXIA, derived from RPC calls and storage queries.",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/api",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/api-derive#readme",
+  "dependencies": {
+    "@axia-js/api": "0.1.0",
+    "@axia-js/rpc-core": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@axia-js/util-crypto": "0.1.2",
+    "@babel/runtime": "^7.15.4",
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "@axia-js/keyring": "0.1.2",
+    "@axia-js/rpc-provider": "0.1.0"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "@axia-js/typegen",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Type generation scripts",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bin": {
+    "axia-types-chain-info": "./scripts/axia-types-chain-info.cjs",
+    "axia-types-from-chain": "./scripts/axia-types-from-chain.cjs",
+    "axia-types-from-defs": "./scripts/axia-types-from-defs.cjs",
+    "axia-types-internal-interfaces": "./scripts/axia-types-internal-interfaces.cjs",
+    "axia-types-internal-metadata": "./scripts/axia-types-internal-metadata.cjs"
+  },
+  "repository": "github:axia-js/api",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "bugs": "https://github.com/axia-js/api/issues",
+  "homepage": "https://github.com/axia-js/api/tree/master/packages/typegen#readme",
+  "dependencies": {
+    "@axia-js/api": "0.1.0",
+    "@axia-js/rpc-provider": "0.1.0",
+    "@axia-js/types": "0.1.0",
+    "@axia-js/types-support": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@babel/core": "^7.15.5",
+    "@babel/register": "^7.15.3",
+    "@babel/runtime": "^7.15.4",
+    "handlebars": "^4.7.7",
+    "websocket": "^1.0.34",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {
+    "@types/websocket": "^1.0.4",
+    "@types/yargs": "^17.0.2"
+  }
+}

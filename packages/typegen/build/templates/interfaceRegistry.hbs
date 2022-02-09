@@ -1,0 +1,12 @@
+{{> header }}
+
+{{{ imports }}}
+
+declare module '@axia-js/types/types/registry' {
+  export interface InterfaceTypes {
+    {{#each items}}
+    {{{this}}}: {{{this}}};
+    {{/each}}
+  }
+}
+{{> footer }}
