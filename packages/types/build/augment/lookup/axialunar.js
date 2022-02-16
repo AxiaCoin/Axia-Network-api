@@ -12,7 +12,7 @@ export default {
   },
 
   /**
-   * Lookup86: axcaxc_primitives::v1::CandidateReceipt<primitive_types::H256>
+   * Lookup86: axiaaxc_primitives::v1::CandidateReceipt<primitive_types::H256>
    **/
   AxiaaxcPrimitivesV1CandidateReceipt: {
     descriptor: 'AxiaaxcPrimitivesV1CandidateDescriptor',
@@ -20,7 +20,7 @@ export default {
   },
 
   /**
-   * Lookup87: axcaxc_primitives::v1::CandidateDescriptor<primitive_types::H256>
+   * Lookup87: axiaaxc_primitives::v1::CandidateDescriptor<primitive_types::H256>
    **/
   AxiaaxcPrimitivesV1CandidateDescriptor: {
     paraId: 'u32',
@@ -35,12 +35,12 @@ export default {
   },
 
   /**
-   * Lookup89: axcaxc_primitives::v0::collator_app::Public
+   * Lookup89: axiaaxc_primitives::v0::collator_app::Public
    **/
   AxiaaxcPrimitivesV0CollatorAppPublic: 'SpCoreSr25519Public',
 
   /**
-   * Lookup90: axcaxc_primitives::v0::collator_app::Signature
+   * Lookup90: axiaaxc_primitives::v0::collator_app::Signature
    **/
   AxiaaxcPrimitivesV0CollatorAppSignature: 'SpCoreSr25519Signature',
 
@@ -98,7 +98,7 @@ export default {
   },
 
   /**
-   * Lookup102: axcaxc_allychain::primitives::HrmpChannelId
+   * Lookup102: axiaaxc_allychain::primitives::HrmpChannelId
    **/
   AxiaaxcAllychainPrimitivesHrmpChannelId: {
     sender: 'u32',
@@ -581,7 +581,7 @@ export default {
   },
 
   /**
-   * Lookup448: axcaxc_primitives::v1::InherentData<sp_runtime::generic::header::Header<Number, sp_runtime::traits::BlakeTwo256>>
+   * Lookup448: axiaaxc_primitives::v1::InherentData<sp_runtime::generic::header::Header<Number, sp_runtime::traits::BlakeTwo256>>
    **/
   AxiaaxcPrimitivesV1InherentData: {
     bitfields: 'Vec<AxiaaxcPrimitivesV1SignedUncheckedSigned>',
@@ -591,7 +591,7 @@ export default {
   },
 
   /**
-   * Lookup450: axcaxc_primitives::v1::signed::UncheckedSigned<axcaxc_primitives::v1::AvailabilityBitfield, axcaxc_primitives::v1::AvailabilityBitfield>
+   * Lookup450: axiaaxc_primitives::v1::signed::UncheckedSigned<axiaaxc_primitives::v1::AvailabilityBitfield, axiaaxc_primitives::v1::AvailabilityBitfield>
    **/
   AxiaaxcPrimitivesV1SignedUncheckedSigned: {
     payload: 'BitVec',
@@ -605,12 +605,12 @@ export default {
   BitvecOrderLsb0: 'Null',
 
   /**
-   * Lookup455: axcaxc_primitives::v0::validator_app::Signature
+   * Lookup455: axiaaxc_primitives::v0::validator_app::Signature
    **/
   AxiaaxcPrimitivesV0ValidatorAppSignature: 'SpCoreSr25519Signature',
 
   /**
-   * Lookup457: axcaxc_primitives::v1::BackedCandidate<primitive_types::H256>
+   * Lookup457: axiaaxc_primitives::v1::BackedCandidate<primitive_types::H256>
    **/
   AxiaaxcPrimitivesV1BackedCandidate: {
     candidate: 'AxiaaxcPrimitivesV1CommittedCandidateReceipt',
@@ -619,7 +619,7 @@ export default {
   },
 
   /**
-   * Lookup458: axcaxc_primitives::v1::CommittedCandidateReceipt<primitive_types::H256>
+   * Lookup458: axiaaxc_primitives::v1::CommittedCandidateReceipt<primitive_types::H256>
    **/
   AxiaaxcPrimitivesV1CommittedCandidateReceipt: {
     descriptor: 'AxiaaxcPrimitivesV1CandidateDescriptor',
@@ -627,7 +627,7 @@ export default {
   },
 
   /**
-   * Lookup459: axcaxc_primitives::v1::CandidateCommitments<N>
+   * Lookup459: axiaaxc_primitives::v1::CandidateCommitments<N>
    **/
   AxiaaxcPrimitivesV1CandidateCommitments: {
     upwardMessages: 'Vec<Bytes>',
@@ -639,7 +639,7 @@ export default {
   },
 
   /**
-   * Lookup461: axcaxc_core_primitives::OutboundHrmpMessage<axcaxc_allychain::primitives::Id>
+   * Lookup461: axiaaxc_core_primitives::OutboundHrmpMessage<axiaaxc_allychain::primitives::Id>
    **/
   AxiaaxcCorePrimitivesOutboundHrmpMessage: {
     recipient: 'u32',
@@ -647,7 +647,7 @@ export default {
   },
 
   /**
-   * Lookup465: axcaxc_primitives::v0::ValidityAttestation
+   * Lookup465: axiaaxc_primitives::v0::ValidityAttestation
    **/
   AxiaaxcPrimitivesV0ValidityAttestation: {
     _enum: {
@@ -658,7 +658,7 @@ export default {
   },
 
   /**
-   * Lookup467: axcaxc_primitives::v1::DisputeStatementSet
+   * Lookup467: axiaaxc_primitives::v1::DisputeStatementSet
    **/
   AxiaaxcPrimitivesV1DisputeStatementSet: {
     candidateHash: 'H256',
@@ -667,7 +667,7 @@ export default {
   },
 
   /**
-   * Lookup471: axcaxc_primitives::v1::DisputeStatement
+   * Lookup471: axiaaxc_primitives::v1::DisputeStatement
    **/
   AxiaaxcPrimitivesV1DisputeStatement: {
     _enum: {
@@ -677,7 +677,7 @@ export default {
   },
 
   /**
-   * Lookup472: axcaxc_primitives::v1::ValidDisputeStatementKind
+   * Lookup472: axiaaxc_primitives::v1::ValidDisputeStatementKind
    **/
   AxiaaxcPrimitivesV1ValidDisputeStatementKind: {
     _enum: {
@@ -689,7 +689,7 @@ export default {
   },
 
   /**
-   * Lookup473: axcaxc_primitives::v1::InvalidDisputeStatementKind
+   * Lookup473: axiaaxc_primitives::v1::InvalidDisputeStatementKind
    **/
   AxiaaxcPrimitivesV1InvalidDisputeStatementKind: {
     _enum: ['Explicit']
@@ -1061,7 +1061,7 @@ export default {
   },
 
   /**
-   * Lookup567: axcaxc_runtime_allychains::origin::pallet::Origin
+   * Lookup567: axiaaxc_runtime_allychains::origin::pallet::Origin
    **/
   AxiaaxcRuntimeAllychainsOriginPalletOrigin: {
     _enum: {
@@ -1080,7 +1080,7 @@ export default {
   },
 
   /**
-   * Lookup607: axcaxc_runtime_allychains::configuration::HostConfiguration<BlockNumber>
+   * Lookup607: axiaaxc_runtime_allychains::configuration::HostConfiguration<BlockNumber>
    **/
   AxiaaxcRuntimeAllychainsConfigurationHostConfiguration: {
     maxCodeSize: 'u32',
@@ -1126,7 +1126,7 @@ export default {
   },
 
   /**
-   * Lookup611: axcaxc_runtime_allychains::inclusion::AvailabilityBitfieldRecord<N>
+   * Lookup611: axiaaxc_runtime_allychains::inclusion::AvailabilityBitfieldRecord<N>
    **/
   AxiaaxcRuntimeAllychainsInclusionAvailabilityBitfieldRecord: {
     bitfield: 'BitVec',
@@ -1134,7 +1134,7 @@ export default {
   },
 
   /**
-   * Lookup612: axcaxc_runtime_allychains::inclusion::CandidatePendingAvailability<primitive_types::H256, N>
+   * Lookup612: axiaaxc_runtime_allychains::inclusion::CandidatePendingAvailability<primitive_types::H256, N>
    **/
   AxiaaxcRuntimeAllychainsInclusionCandidatePendingAvailability: {
     _alias: {
@@ -1151,7 +1151,7 @@ export default {
   },
 
   /**
-   * Lookup616: axcaxc_runtime_allychains::scheduler::ParathreadClaimQueue
+   * Lookup616: axiaaxc_runtime_allychains::scheduler::ParathreadClaimQueue
    **/
   AxiaaxcRuntimeAllychainsSchedulerParathreadClaimQueue: {
     queue: 'Vec<AxiaaxcRuntimeAllychainsSchedulerQueuedParathread>',
@@ -1159,7 +1159,7 @@ export default {
   },
 
   /**
-   * Lookup618: axcaxc_runtime_allychains::scheduler::QueuedParathread
+   * Lookup618: axiaaxc_runtime_allychains::scheduler::QueuedParathread
    **/
   AxiaaxcRuntimeAllychainsSchedulerQueuedParathread: {
     claim: 'AxiaaxcPrimitivesV1ParathreadEntry',
@@ -1167,7 +1167,7 @@ export default {
   },
 
   /**
-   * Lookup619: axcaxc_primitives::v1::ParathreadEntry
+   * Lookup619: axiaaxc_primitives::v1::ParathreadEntry
    **/
   AxiaaxcPrimitivesV1ParathreadEntry: {
     claim: 'AxiaaxcPrimitivesV1ParathreadClaim',
@@ -1175,12 +1175,12 @@ export default {
   },
 
   /**
-   * Lookup620: axcaxc_primitives::v1::ParathreadClaim
+   * Lookup620: axiaaxc_primitives::v1::ParathreadClaim
    **/
   AxiaaxcPrimitivesV1ParathreadClaim: '(u32,AxiaaxcPrimitivesV0CollatorAppPublic)',
 
   /**
-   * Lookup623: axcaxc_primitives::v1::CoreOccupied
+   * Lookup623: axiaaxc_primitives::v1::CoreOccupied
    **/
   AxiaaxcPrimitivesV1CoreOccupied: {
     _enum: {
@@ -1190,7 +1190,7 @@ export default {
   },
 
   /**
-   * Lookup626: axcaxc_runtime_allychains::scheduler::CoreAssignment
+   * Lookup626: axiaaxc_runtime_allychains::scheduler::CoreAssignment
    **/
   AxiaaxcRuntimeAllychainsSchedulerCoreAssignment: {
     core: 'u32',
@@ -1200,7 +1200,7 @@ export default {
   },
 
   /**
-   * Lookup627: axcaxc_runtime_allychains::scheduler::AssignmentKind
+   * Lookup627: axiaaxc_runtime_allychains::scheduler::AssignmentKind
    **/
   AxiaaxcRuntimeAllychainsSchedulerAssignmentKind: {
     _enum: {
@@ -1210,14 +1210,14 @@ export default {
   },
 
   /**
-   * Lookup628: axcaxc_runtime_allychains::paras::ParaLifecycle
+   * Lookup628: axiaaxc_runtime_allychains::paras::ParaLifecycle
    **/
   AxiaaxcRuntimeAllychainsParasParaLifecycle: {
     _enum: ['Onboarding', 'Parathread', 'Allychain', 'UpgradingParathread', 'DowngradingAllychain', 'OffboardingParathread', 'OffboardingAllychain']
   },
 
   /**
-   * Lookup630: axcaxc_runtime_allychains::paras::ParaPastCodeMeta<N>
+   * Lookup630: axiaaxc_runtime_allychains::paras::ParaPastCodeMeta<N>
    **/
   AxiaaxcRuntimeAllychainsParasParaPastCodeMeta: {
     upgradeTimes: 'Vec<AxiaaxcRuntimeAllychainsParasReplacementTimes>',
@@ -1225,7 +1225,7 @@ export default {
   },
 
   /**
-   * Lookup632: axcaxc_runtime_allychains::paras::ReplacementTimes<N>
+   * Lookup632: axiaaxc_runtime_allychains::paras::ReplacementTimes<N>
    **/
   AxiaaxcRuntimeAllychainsParasReplacementTimes: {
     expectedAt: 'u32',
@@ -1233,21 +1233,21 @@ export default {
   },
 
   /**
-   * Lookup634: axcaxc_primitives::v1::UpgradeGoAhead
+   * Lookup634: axiaaxc_primitives::v1::UpgradeGoAhead
    **/
   AxiaaxcPrimitivesV1UpgradeGoAhead: {
     _enum: ['Abort', 'GoAhead']
   },
 
   /**
-   * Lookup635: axcaxc_primitives::v1::UpgradeRestriction
+   * Lookup635: axiaaxc_primitives::v1::UpgradeRestriction
    **/
   AxiaaxcPrimitivesV1UpgradeRestriction: {
     _enum: ['Present']
   },
 
   /**
-   * Lookup636: axcaxc_runtime_allychains::paras::ParaGenesisArgs
+   * Lookup636: axiaaxc_runtime_allychains::paras::ParaGenesisArgs
    **/
   AxiaaxcRuntimeAllychainsParasParaGenesisArgs: {
     genesisHead: 'Bytes',
@@ -1256,7 +1256,7 @@ export default {
   },
 
   /**
-   * Lookup639: axcaxc_runtime_allychains::initializer::BufferedSessionChange
+   * Lookup639: axiaaxc_runtime_allychains::initializer::BufferedSessionChange
    **/
   AxiaaxcRuntimeAllychainsInitializerBufferedSessionChange: {
     validators: 'Vec<AxiaaxcPrimitivesV0ValidatorAppPublic>',
@@ -1265,7 +1265,7 @@ export default {
   },
 
   /**
-   * Lookup641: axcaxc_core_primitives::InboundDownwardMessage<BlockNumber>
+   * Lookup641: axiaaxc_core_primitives::InboundDownwardMessage<BlockNumber>
    **/
   AxiaaxcCorePrimitivesInboundDownwardMessage: {
     sentAt: 'u32',
@@ -1273,7 +1273,7 @@ export default {
   },
 
   /**
-   * Lookup644: axcaxc_runtime_allychains::hrmp::HrmpOpenChannelRequest
+   * Lookup644: axiaaxc_runtime_allychains::hrmp::HrmpOpenChannelRequest
    **/
   AxiaaxcRuntimeAllychainsHrmpHrmpOpenChannelRequest: {
     confirmed: 'bool',
@@ -1285,7 +1285,7 @@ export default {
   },
 
   /**
-   * Lookup646: axcaxc_runtime_allychains::hrmp::HrmpChannel
+   * Lookup646: axiaaxc_runtime_allychains::hrmp::HrmpChannel
    **/
   AxiaaxcRuntimeAllychainsHrmpHrmpChannel: {
     maxCapacity: 'u32',
@@ -1299,7 +1299,7 @@ export default {
   },
 
   /**
-   * Lookup649: axcaxc_core_primitives::InboundHrmpMessage<BlockNumber>
+   * Lookup649: axiaaxc_core_primitives::InboundHrmpMessage<BlockNumber>
    **/
   AxiaaxcCorePrimitivesInboundHrmpMessage: {
     sentAt: 'u32',
@@ -1307,7 +1307,7 @@ export default {
   },
 
   /**
-   * Lookup654: axcaxc_primitives::v1::SessionInfo
+   * Lookup654: axiaaxc_primitives::v1::SessionInfo
    **/
   AxiaaxcPrimitivesV1SessionInfo: {
     validators: 'Vec<AxiaaxcPrimitivesV0ValidatorAppPublic>',
@@ -1323,7 +1323,7 @@ export default {
   },
 
   /**
-   * Lookup656: axcaxc_runtime_common::paras_registrar::ParaInfo<sp_core::crypto::AccountId32, Balance>
+   * Lookup656: axiaaxc_runtime_common::paras_registrar::ParaInfo<sp_core::crypto::AccountId32, Balance>
    **/
   AxiaaxcRuntimeCommonParasRegistrarParaInfo: {
     manager: 'AccountId32',
@@ -1332,7 +1332,7 @@ export default {
   },
 
   /**
-   * Lookup666: axcaxc_runtime_common::crowdloan::FundInfo<sp_core::crypto::AccountId32, Balance, BlockNumber, LeasePeriod>
+   * Lookup666: axiaaxc_runtime_common::crowdloan::FundInfo<sp_core::crypto::AccountId32, Balance, BlockNumber, LeasePeriod>
    **/
   AxiaaxcRuntimeCommonCrowdloanFundInfo: {
     depositor: 'AccountId32',
@@ -1348,7 +1348,7 @@ export default {
   },
 
   /**
-   * Lookup667: axcaxc_runtime_common::crowdloan::LastContribution<BlockNumber>
+   * Lookup667: axiaaxc_runtime_common::crowdloan::LastContribution<BlockNumber>
    **/
   AxiaaxcRuntimeCommonCrowdloanLastContribution: {
     _enum: {

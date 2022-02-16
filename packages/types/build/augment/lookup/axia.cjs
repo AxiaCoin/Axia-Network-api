@@ -11,19 +11,19 @@ exports.default = void 0;
 /* eslint-disable sort-keys */
 var _default = {
   /**
-   * Lookup66: axcaxc_runtime_common::claims::EthereumAddress
+   * Lookup66: axiaaxc_runtime_common::claims::EthereumAddress
    **/
   AxiaaxcRuntimeCommonClaimsEthereumAddress: '[u8;20]',
 
   /**
-   * Lookup72: axcaxc_runtime::ProxyType
+   * Lookup72: axiaaxc_runtime::ProxyType
    **/
   AxiaaxcRuntimeProxyType: {
     _enum: ['Any', 'NonTransfer', 'Governance', 'Staking', 'Unused4', 'IdentityJudgement', 'CancelProxy']
   },
 
   /**
-   * Lookup139: axcaxc_runtime::SessionKeys
+   * Lookup139: axiaaxc_runtime::SessionKeys
    **/
   AxiaaxcRuntimeSessionKeys: {
     grandpa: 'SpFinalityGrandpaAppPublic',
@@ -35,29 +35,29 @@ var _default = {
   },
 
   /**
-   * Lookup140: axcaxc_primitives::v0::validator_app::Public
+   * Lookup140: axiaaxc_primitives::v0::validator_app::Public
    **/
   AxiaaxcPrimitivesV0ValidatorAppPublic: 'SpCoreSr25519Public',
 
   /**
-   * Lookup141: axcaxc_primitives::v1::assignment_app::Public
+   * Lookup141: axiaaxc_primitives::v1::assignment_app::Public
    **/
   AxiaaxcPrimitivesV1AssignmentAppPublic: 'SpCoreSr25519Public',
 
   /**
-   * Lookup175: axcaxc_runtime_common::claims::EcdsaSignature
+   * Lookup175: axiaaxc_runtime_common::claims::EcdsaSignature
    **/
   AxiaaxcRuntimeCommonClaimsEcdsaSignature: '[u8;65]',
 
   /**
-   * Lookup180: axcaxc_runtime_common::claims::StatementKind
+   * Lookup180: axiaaxc_runtime_common::claims::StatementKind
    **/
   AxiaaxcRuntimeCommonClaimsStatementKind: {
     _enum: ['Regular', 'Saft']
   },
 
   /**
-   * Lookup233: axcaxc_runtime::NposCompactSolution16
+   * Lookup233: axiaaxc_runtime::NposCompactSolution16
    **/
   AxiaaxcRuntimeNposCompactSolution16: {
     votes1: 'Vec<(Compact<u32>,Compact<u16>)>',
@@ -79,7 +79,7 @@ var _default = {
   },
 
   /**
-   * Lookup290: axcaxc_runtime::OriginCaller
+   * Lookup290: axiaaxc_runtime::OriginCaller
    **/
   AxiaaxcRuntimeOriginCaller: {
     _enum: {
@@ -104,12 +104,12 @@ var _default = {
   },
 
   /**
-   * Lookup441: axcaxc_runtime_common::claims::PrevalidateAttests<T>
+   * Lookup441: axiaaxc_runtime_common::claims::PrevalidateAttests<T>
    **/
   AxiaaxcRuntimeCommonClaimsPrevalidateAttests: 'Null',
 
   /**
-   * Lookup442: axcaxc_runtime::Runtime
+   * Lookup442: axiaaxc_runtime::Runtime
    **/
   AxiaaxcRuntimeRuntime: 'Null'
 };
